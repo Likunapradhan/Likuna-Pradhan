@@ -1,0 +1,129 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f4f9; /* Soft blue background color */
+}
+
+header {
+    background-color: #004f75; /* Dark blue header color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #003f5e; /* Darker blue for nav button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.nav-button:hover {
+    background-color: #002d3a; /* Even darker blue on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+.blog-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-section h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.blog-card {
+    background-color: #b3e0ff; /* Light blue background */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Move up on reveal */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    padding: 1rem;
+    /* Increase the height of the card to fit more content */
+    height: 500px; /* Adjust this value as needed */
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-bottom: 1px solid #007bb5; /* Blue border for image section */
+}
+
+.blog-card-header h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.blog-date {
+    color: #007bb5; /* Blue for date */
+    font-size: 14px;
+}
+
+.author {
+    font-size: 14px;
+    color: #004f75; /* Darker blue for author */
+}
+
+.blog-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px; /* Fixed height for body */
+}
+
+.blog-stats {
+    margin-top: auto;
+    font-size: 14px;
+    color: #004f75; /* Darker blue for stats */
+}
+
+.likes, .views {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    margin-top: 1rem;
+    color: #004f75; /* Darker blue for read more link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Tracker | EcoTrack</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="impact.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="EcoTrack.png" alt="EcoTrack Logo" class="logo">
+            <a href="home.html" class="nav-button">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="impact-summary">
+            <h1>Impact Tracker</h1>
+            <p>Welcome, Narendra Modi! Here, you can see how your efforts have contributed to reducing your carbon footprint.</p>
+        </section>
+
+        <section class="impact-charts">
+            <h2>Your Impact Over Time</h2>
+            <canvas id="impactChart"></canvas>
+        </section>
+
+        <section class="achievements">
+            <h2>Your Achievements</h2>
+            <ul>
+                <li>Achievement 1: Reduced carbon footprint by 20%</li>
+                <li>Achievement 2: Completed 50 sustainability tips</li>
+                <!-- Add more achievements as needed -->
+            </ul>
+        </section>
+
+        <section class="goals-notepad">
+            <h2>Your Goals</h2>
+            <textarea id="goalsNotepad" rows="10" cols="50">
+1. Reduce carbon footprint by 30% by the end of the year.
+2. Implement 10 new sustainability practices in daily life.
+3. Engage in community clean-up activities twice a month.
+            </textarea>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Next Steps</h2>
+            <p>Keep up the great work! Consider setting new goals or sharing your progress with others.</p>
+            <div class="dropdown">
+                <button class="cta-button">Share Your Progress</button>
+                <div class="dropdown-content">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

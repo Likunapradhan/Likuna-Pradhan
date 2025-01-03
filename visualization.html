@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Visualization</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="EcoTrack.png" alt="EcoTrack Logo" class="logo">
+            <a href="home.html" class="nav-button">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h1>Progress Visualization</h1>
+            <div class="profile-info">
+                <h2>Welcome, Narendra Modi!</h2>
+                <p>Here’s your sustainability progress report:</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="progressBarChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="activityPieChart"></canvas>
+            </div>
+            <div class="filters">
+                <label for="dateRange">Date Range:</label>
+                <input type="date" id="startDate" name="startDate">
+                <input type="date" id="endDate" name="endDate">
+                <button id="applyFilters">Apply Filters</button>
+            </div>
+            <div class="comparison">
+                <h2>Compare with Past Performance</h2>
+                <button id="compareButton">Compare</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="progress.js"></script>
+</body>
+</html>

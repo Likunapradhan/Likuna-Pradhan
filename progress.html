@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Entry</title>
+    <link rel="stylesheet" href="style1.5.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="EcoTrack.png" alt="EcoTrack Logo" class="logo">
+            <a href="home.html" class="nav-button">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h1>Activity Entry</h1>
+            <div class="profile-info">
+                <h2>Welcome, Narendra Modi!</h2>
+                <p>Here you can enter your daily progress and activities:</p>
+            </div>
+
+            <!-- Daily Progress Entry Form -->
+            <section id="daily-progress-form">
+                <h2>Enter Your Daily Progress</h2>
+                <form id="dailyProgressForm">
+                    <label for="activityType">Activity Type:</label>
+                    <select id="activityType" name="activityType">
+                        <option value="Energy Reduction">Energy Reduction</option>
+                        <option value="Waste Management">Waste Management</option>
+                        <option value="Water Conservation">Water Conservation</option>
+                        <option value="Recycling Initiatives">Recycling Initiatives</option>
+                    </select>
+                    
+                    <label for="progressValue">Progress Value (in units):</label>
+                    <input type="number" id="progressValue" name="progressValue" required>
+                    
+                    <button type="submit">Add Progress</button>
+                </form>
+            </section>
+
+            <!-- Activity Entry Form -->
+            <section id="activity-form">
+                <h2>Enter Your Activities</h2>
+                <form id="newActivityForm">
+                    <label for="activityName">Activity Name:</label>
+                    <input type="text" id="activityName" name="activityName" required>
+                    
+                    <label for="activityValue">Activity Value (in units):</label>
+                    <input type="number" id="activityValue" name="activityValue" required>
+                    
+                    <button type="submit">Add Activity</button>
+                </form>
+            </section>
+
+            <div class="filters">
+                <label for="dateRange">Date Range:</label>
+                <input type="date" id="startDate" name="startDate">
+                <input type="date" id="endDate" name="endDate">
+                <button id="applyFilters">Apply Filters</button>
+            </div>
+            <div class="comparison">
+                <h2>Compare with Past Performance</h2>
+                <button id="compareButton">Compare</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="progress0.js"></script>
+</body>
+</html>

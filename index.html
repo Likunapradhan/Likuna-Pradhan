@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/animateAnything.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script defer src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class='page'>
+    <header>
+      <div class='position-fixed swoosh'></div>
+      <div class='d-flex difference justify-content-between sticky-nav'>
+        <div class='logo'></div>
+        <div class='nav-links d-flex align-items-center'>
+          <a class='nav-link' href='#home'>Home</a>
+          <a class='nav-link sign-up' href='signup.html'>Sign Up</a>
+          <div class='box menu' id='nav-btn'>
+            <svg id="i1" class="icon" viewBox="20 30 60 40">
+              <path id="top-line-1" d="M30,37 L70,37 Z"></path>
+              <path id="middle-line-1" d="M30,50 L70,50 Z"></path>
+              <path id="bottom-line-1" d="M30,63 L70,63 Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id='takeover-nav'>
+        <div class='container-fluid'>
+          <div class='row'>
+            <div class='align-items-center bg-black col-12 col-md-7 d-flex justify-content-center nav-col order-1 order-md-0 position-relative px-3 py-5'>
+              <div class='bg-topographic h-100 position-absolute w-100'></div>
+              <div class='content position-relative'>
+                <h2 class='mb-5 nav-title white'>
+                  Let's build a greener tomorrow<span class="d-inline green">&period;</span>
+                </h2>
+              </div>
+            </div>
+            <div class='align-items-center bg-green col-12 col-md-5 d-flex nav-col nav-menu order-0 order-md-1 pb-3 pb-md-5 pt-5 px-3 px-md-5'>
+              <ul class='list-unstyled nav-items'>
+                <li class='pb-3'>
+                  <a class='text-decoration-none' href='services.html'>Services</a>
+                </li>
+                <li class='pb-3'>
+                  <a class='text-decoration-none' href='portfolio.html'>Portfolio</a>
+                </li>
+                <li class='pb-3'>
+                  <a class='text-decoration-none' href='FAQs.html'>FAQs</a>
+                </li>
+                <li>
+                  <a class='text-decoration-none' href='about.html'>About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </header>
+    <section class='hero align-items-center d-flex justify-content-center'>
+      <div class='video-wrap'>
+        <video autoplay="" playsinline="" loop="" muted="" id="video-bg">
+          <source src="Waves.mp4" type="video/mp4">
+          <source src="Waves.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class='gradient-overlay position-absolute w-100'></div>
+      <div class='content mb-5 position-relative text-center'>
+        <h1 class='blend hero-title'>
+          Your Personal
+          <br>
+          Sustainability Companion
+        </h1>
+      </div>
+    </section>
+
+    <section class='two'>
+      <div class='container'>
+        <div class='row align-items-center'>
+          <div class='col-md-6'>
+            <img src='sustainability conference.jpg' alt='EcoTrack Event' class='event-image'>
+          </div>
+          <div class='col-md-6'>
+            <div class='event-info'>
+              <h2 class='event-title'>Get Involved</h2>
+              <h3 class='event-subtitle'>EcoTrack Annual Sustainability Conference</h3>
+              <p class='event-date'>30 Aug 2024, 2:45 pm – 4:45 pm</p>
+              <p class='event-location'>GreenTech Convention Center, Washington, USA</p>
+              <a href='signup.html' class='btn-register'>Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='three'>
+      <div class='container'>
+        <h2 class='blogs-heading text-center mb-5'>Read Our Blogs</h2>
+        <div class='row justify-content-center'>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='blog-post'>
+              <div class="blog-image-container">
+                <img src="Designer.png" class="blog-image" alt="Blog Image">
+              </div>              
+              <div class='blog-content'>
+                <p class='blog-author'>Likuna Pradhan</p>
+                <h3 class='blog-title'>Reduce Your Carbon Footprint with EcoTrack's User-Friendly Tools</h3>
+                <p class='blog-excerpt'>Explore how EcoTrack's tools make it easy to monitor and reduce your carbon footprint for a more sustainable lifestyle.</p>
+                <a href='#' class='read-more'>Read More</a>
+                <div class='blog-post-meta'>
+                  <span class='likes'>❤️ 369 Likes</span>
+                  <span class='views'>👁️ 450 Views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='blog-post'>
+              <div class="blog-image-container">
+                <img src="Designer2.png" class="blog-image" alt="Blog Image">
+              </div>
+              <div class='blog-content'>
+                <p class='blog-author'>Megha Anjana</p>
+                <h3 class='blog-title'>How to Track Your Environmental Impact Effectively</h3>
+                <p class='blog-excerpt'>Learn the best practices for tracking your environmental impact and making informed decisions for a greener future.</p>
+                <a href='#' class='read-more'>Read More</a>
+                <div class='blog-post-meta'>
+                  <span class='likes'>❤️ 320 Likes</span>
+                  <span class='views'>👁️ 420 Views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='blog-post'>
+              <div class="blog-image-container">
+                <img src="Designer3.png" class="blog-image" alt="Blog Image">
+              </div>
+              <div class='blog-content'>
+                <p class='blog-author'>Sudhanshu Sekhar Naik</p>
+                <h3 class='blog-title'>Tips for Sustainable Living: Simple Changes for a Better Planet</h3>
+                <p class='blog-excerpt'>Discover easy-to-implement tips for sustainable living that can make a big difference in reducing your environmental footprint.</p>
+                <a href='#' class='read-more'>Read More</a>
+                <div class='blog-post-meta'>
+                  <span class='likes'>❤️ 469 Likes</span>
+                  <span class='views'>👁️ 550 Views</span>
+                </div>
+              </div>
+            </div>
+            <div class='text-center mt-4'>
+              <a href='blogs.html' class='btn-read-more'>Read More Blogs >></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class='four'>
+      <section id="our-story">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>Our Story</h2>
+                <p>Born from the legacy of past social movements, EcoTrack was founded in 2023 by a dedicated group of community activists in San Francisco. What began as a grassroots initiative has evolved into a dynamic and influential force for change. At EcoTrack, we are more than just a movement—we are a catalyst for environmental transformation. We challenge conventional norms, hold leaders accountable, and champion innovative solutions to create a sustainable future.</p>
+            </div>
+            <div class="story-image-container">
+                <img src="Designer4.png" alt="Our Story Image">
+            </div>
+        </div>
+        <div class="cta-container">
+          <a href="signup.html" class="cta-button">Get Involved</a>
+        </div>
+        <div class="quote-container">
+          <blockquote>
+              “EcoTrack represents a commitment to a sustainable future. Our mission is driven by passion and a vision for a better world.”
+              <footer>- Bikash Naik</footer>
+          </blockquote>
+      </div>
+      <div class="timeline-container">
+        <h3>Our Milestones</h3>
+        <ul>
+            <li><strong>2023:</strong> Founded in San Francisco.</li>
+            <li><strong>2024:</strong> Launched first major campaign.</li>
+            <li><strong>2025:</strong> Reached 10,000 active members.</li>
+        </ul>
+    </div>          
+    </section>    
+    </section>
+    <section class='five'>
+      <section id="our-initiatives">
+        <h2 class="initiatives-heading">Our Initiatives</h2>
+        <div class="initiatives-container">
+          <!-- First Initiative -->
+          <div class="initiative">
+            <div class="initiative-text">
+              <h3>Advocacy</h3>
+              <h4>Strength in Unity</h4>
+              <p>Advocacy is at the core of our Environmental Movement. We believe in the power of collective action and strive to educate and empower others to stand up for their beliefs. Want to be a part of the change?</p>
+            </div>
+            <div class="initiative-image-container">
+              <img src="Designer5.png" alt="Initiative Image">
+          </div>          
+          </div>
+    
+          <!-- Second Initiative with image on the left and text on the right -->
+          <div class="initiative">
+            <div class="initiative-image-container">
+              <img src="Designer6.png" alt="Initiative Image">
+          </div>          
+            <div class="initiative-text">
+              <h3>Community Outreach</h3>
+              <h4>Supporting Every Voice</h4>
+              <p>At EcoTrack, we prioritize Community Outreach by providing a nurturing environment and valuable resources. Our community thrives on the passion and dedication of individuals like you.</p>
+            </div>
+          </div>
+    
+          <!-- Third Initiative -->
+          <div class="initiative">
+            <div class="initiative-text">
+              <h3>Collaboration</h3>
+              <h4>Amplifying Voices</h4>
+              <p>As a diverse community of activists, Collaboration is fundamental to our mission. We believe in fostering awareness and inclusivity to drive positive change worldwide.</p>
+            </div>
+            <div class="initiative-image-container">
+              <img src="Designer7.png" alt="Initiative Image">
+          </div>          
+          </div>
+        </div>
+      </section>            
+    </section> 
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: contact@ecotrack.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>About EcoTrack</h3>
+          <p>EcoTrack is dedicated to promoting sustainability and environmental awareness through innovative solutions and community engagement.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ML Hats. All rights reserved.</p>
+      </div>
+    </footer>    
+</div>
+</body>
+</html>

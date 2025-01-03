@@ -1,0 +1,132 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7ff; /* Soft blue background color */
+}
+
+header {
+    background-color: #007bb5; /* Header color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #005f8d; /* Darker blue for nav button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.nav-button:hover {
+    background-color: #003f6c; /* Even darker blue on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+.forum-post-details {
+    max-width: 800px;
+    margin: auto;
+}
+
+.forum-post-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.forum-comments {
+    margin-top: 2rem;
+}
+
+.comment {
+    background-color: #cce5ff; /* Light blue for comments */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+}
+
+.comment-header .user-avatar {
+    width: 40px !important; /* Forcefully set size */
+    height: 40px !important; /* Forcefully set size */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image fits the avatar container */
+    margin-right: 1rem;
+}
+
+.comment-info {
+    margin-right: 1rem;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.comment-date {
+    font-size: 0.9rem;
+    color: #007bb5; /* Blue for date */
+}
+
+.comment-text {
+    margin-top: 0.5rem;
+}
+
+.comment-form {
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #007bb5; /* Blue border */
+    resize: vertical;
+}
+
+.submit-comment-button {
+    display: inline-block;
+    background-color: #007bb5; /* Blue for button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+}
+
+.submit-comment-button:hover {
+    background-color: #005f8d; /* Darker blue on hover */
+}

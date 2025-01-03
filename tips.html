@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Sustainability Tips - EcoTrack</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="EcoTrack.png" alt="EcoTrack Logo" class="logo">
+            <a href="home.html" class="nav-button">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h1>Personalized Sustainability Tips</h1>
+            <p>Discover tailored recommendations and actionable tips to help you make more sustainable choices in your daily life.</p>
+        </section>
+
+        <section class="tips-section" id="tips-section">
+            <!-- Tips will be dynamically inserted here -->
+        </section>
+
+        <section class="pagination-buttons">
+            <button id="read-back-button" class="pagination-button">Read Back</button>
+            <button id="more-tips-button" class="pagination-button">More Tips</button>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Implement these tips today and make a positive impact on the environment. Explore more resources and get involved with EcoTrack!</p>
+            <a href="resources.html" class="cta-button">Explore Resources</a>
+        </section>
+    </main>
+
+    <script>
+        const tips = [
+            { title: 'Reduce Energy Consumption', image: 'Designer (0).png', description: 'Switch to energy-efficient appliances and practice energy-saving habits to reduce your carbon footprint and save on utility bills.' },
+            { title: 'Minimize Waste', image: 'Designer (1).png', description: 'Adopt the 3 R\'s: Reduce, Reuse, Recycle. Avoid single-use plastics and opt for reusable alternatives to decrease waste generation.' },
+            { title: 'Conserve Water', image: 'Designer (2).png', description: 'Implement water-saving practices like fixing leaks, using water-efficient fixtures, and reducing water usage in daily activities.' },
+            { title: 'Support Local Agriculture', image: 'Designer (3).png', description: 'Buy locally-produced food to support local farmers and reduce the environmental impact of transportation and packaging.' },
+            { title: 'Opt for Sustainable Transportation', image: 'Designer (4).png', description: 'Use public transportation, carpool, or choose electric vehicles to decrease greenhouse gas emissions and reduce your carbon footprint.' },
+            { title: 'Use Eco-Friendly Products', image: 'Designer (5).png', description: 'Choose products made from sustainable materials and those with minimal packaging to reduce your environmental impact.' },
+            { title: 'Compost Organic Waste', image: 'Designer (6).png', description: 'Start composting food scraps and yard waste to reduce landfill waste and create nutrient-rich soil for your garden.' },
+            { title: 'Participate in Local Cleanups', image: 'Designer (7).png', description: 'Join local clean-up events to help keep your community and natural areas free from litter and pollution.' },
+            { title: 'Educate Yourself and Others', image: 'Designer (8).png', description: 'Stay informed about environmental issues and share your knowledge with others to promote sustainability.' },
+            { title: 'Opt for Digital Receipts', image: 'Designer (9).png', description: 'Request digital receipts to reduce paper waste and keep your transactions organized electronically.' },
+            { title: 'Reduce Meat Consumption', image: 'Designer (10).png', description: 'Incorporate more plant-based meals into your diet to lower your carbon footprint and improve your health.' },
+            { title: 'Use Reusable Bags', image: 'Designer (11).png', description: 'Carry reusable bags for shopping to reduce the use of single-use plastic bags and minimize waste.' },
+            { title: 'Switch to LED Lighting', image: 'Designer (12).png', description: 'Replace incandescent bulbs with energy-efficient LED lights to save energy and reduce greenhouse gas emissions.' },
+            { title: 'Practice Sustainable Gardening', image: 'Designer (13).png', description: 'Use organic methods and native plants to create a garden that benefits local wildlife and reduces environmental impact.' },
+            { title: 'Reduce Plastic Use', image: 'Designer (14).png', description: 'Opt for products with minimal plastic packaging and avoid single-use plastic items whenever possible.' },
+            { title: 'Support Green Businesses', image: 'Designer (15).png', description: 'Choose to buy from businesses that prioritize sustainable practices and environmentally-friendly products.' },
+            { title: 'Recycle Properly', image: 'Designer (16).png', description: 'Follow local recycling guidelines to ensure that materials are properly sorted and processed for recycling.' },
+            { title: 'Save Paper by Going Digital', image: 'Designer (17).png', description: 'Switch to digital documents and communications to reduce paper consumption and waste.' },
+            { title: 'Use Water-Saving Fixtures', image: 'Designer (18).png', description: 'Install water-saving fixtures like low-flow showerheads and faucets to reduce water usage in your home.' },
+            { title: 'Support Renewable Energy', image: 'Designer (19).png', description: 'Consider investing in renewable energy sources like solar or wind power for your home to reduce reliance on fossil fuels.' },
+            { title: 'Get Involved in Environmental Advocacy', image: 'Designer (20).png', description: 'Join or support organizations that advocate for environmental protection and sustainability policies.' }
+        ];
+
+        let currentPage = 0;
+        const tipsPerPage = 6;
+
+        function displayTips(page) {
+            const tipsSection = document.getElementById('tips-section');
+            tipsSection.innerHTML = '';
+
+            const start = page * tipsPerPage;
+            const end = Math.min(start + tipsPerPage, tips.length);
+            
+            for (let i = start; i < end; i++) {
+                const tip = tips[i];
+                const tipCard = document.createElement('div');
+                tipCard.className = 'tip-card';
+                tipCard.innerHTML = `
+                    <h2>${tip.title}</h2>
+                    <img src="${tip.image}" alt="${tip.title}">
+                    <p>${tip.description}</p>
+                `;
+                tipsSection.appendChild(tipCard);
+            }
+
+            const readBackButton = document.getElementById('read-back-button');
+            const moreTipsButton = document.getElementById('more-tips-button');
+
+            if (page > 0) {
+                readBackButton.style.display = 'block';
+                readBackButton.addEventListener('click', () => {
+                    currentPage--;
+                    displayTips(currentPage);
+                });
+            } else {
+                readBackButton.style.display = 'none';
+            }
+
+            if (end < tips.length) {
+                moreTipsButton.style.display = 'block';
+                moreTipsButton.addEventListener('click', () => {
+                    currentPage++;
+                    displayTips(currentPage);
+                });
+            } else {
+                moreTipsButton.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayTips(currentPage);
+        });
+    </script>
+</body>
+</html>

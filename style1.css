@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c8ff9c;
+    color: #333;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e8b57;
+    padding: 10px;
+    color: #fff;
+}
+
+.nav-button {
+    margin-right: 10px; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; 
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; 
+}
+
+.logo {
+    height: 40px;
+    margin-right: 840px; 
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #2e8b57;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #276c4d;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #208b10;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tab-button.active {
+    background-color: #5adb51;
+    border-bottom: 1px solid #fff;
+}
+
+.calculator-form {
+    display: none;
+}
+
+.calculator-form.active {
+    display: block;
+}
+
+#results-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}

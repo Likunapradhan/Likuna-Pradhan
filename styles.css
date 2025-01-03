@@ -1,0 +1,143 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #008451, #E0E0E0); /* Pebble Gray and a soft gradient */
+}
+
+/* Header */
+header {
+    background: #1e2a38; /* Darker background for a modern, sleek look */
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+header .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Adjust size as needed */
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header li {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #f39c12; /* Lighter accent color for modern design */
+}
+
+main {
+    padding: 4rem 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#services-intro {
+    text-align: center;
+    margin-bottom: 4rem; /* Margin at the bottom to create space before services */
+    background: linear-gradient(135deg, #228B22, #87CEEB); /* Forest Green to Sky Blue */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem; /* Margin at the top to create space after services intro */
+}
+
+#services-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#services-intro p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.service {
+    background: #fff;
+    border: 1px solid #D3D3D3; /* Pebble Gray */
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #228B22; /* Forest Green */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FF4500; /* Sunset Orange */
+}

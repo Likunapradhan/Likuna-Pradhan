@@ -1,0 +1,140 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #e70000, #e0e0e0);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Adjust logo size */
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header li {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #f4a261;
+}
+
+#faq-intro {
+    text-align: center;
+    margin: 4rem 0;
+    background: linear-gradient(135deg, #e85e77, #ff5722);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#faq-intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#faq-intro p {
+    font-size: 1.3rem;
+}
+
+#faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #f4f4f4;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f4a261;
+}

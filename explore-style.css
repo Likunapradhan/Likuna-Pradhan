@@ -1,0 +1,101 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0ffe8; /* Soft blue background color */
+}
+
+header {
+    background-color: #71d4ff; /* Dark blue header color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #3269ff; /* Darker blue for nav button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.nav-button:hover {
+    background-color: #ffc53e; /* Even darker blue on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+.explore-websites {
+    max-width: 900px;
+    margin: auto;
+}
+
+.explore-websites h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.explore-websites p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.website-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.website-button {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Light blue background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+    text-decoration: none;
+    color: #003f5e; /* Darker blue text */
+}
+
+.website-button:hover {
+    background-color: hsl(95, 100%, 87%); /* Slightly darker blue on hover */
+}
+
+.website-image {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.website-info {
+    flex: 1;
+}
+
+.website-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.website-description {
+    font-size: 16px;
+    margin: 0;
+}

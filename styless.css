@@ -1,0 +1,164 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #f0f0f0; /* Light text color for better contrast */
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Darker gradient for a modern look */
+}
+
+header {
+    background: #1e2a38; /* Darker background for a modern, sleek look */
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+header .logo-link {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Adjust size as needed */
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header li {
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #f39c12; /* Lighter accent color for modern design */
+}
+
+#portfolio-intro {
+    text-align: center;
+    margin: 4rem 0;
+    background: linear-gradient(135deg, #3498db, #2c3e50); /* Updated gradient for a modern, vibrant look */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 15px; /* Slightly rounded corners for a modern touch */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for a modern effect */
+}
+
+#portfolio-intro h1 {
+    font-size: 3.5rem; /* Slightly larger for more impact */
+    margin-bottom: 1rem;
+}
+
+#portfolio-intro p {
+    font-size: 1.3rem; /* Slightly larger for better readability */
+}
+
+#team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.member {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow with more depth */
+    text-align: center;
+    width: 1200px; /* Adjusted for better fit */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+}
+
+.member:hover {
+    transform: translateY(-12px); /* Slightly increased hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+    border-radius: 50%;
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: -1rem;
+    border: 4px solid #3498db; /* Updated border color */
+    transition: border-color 0.3s;
+}
+
+.member:hover .member-photo {
+    border-color: #2c3e50; /* Updated hover border color */
+}
+
+.member h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50; /* Updated heading color */
+}
+
+.member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.member a {
+    color: #3498db; /* Accent color updated */
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.member a:hover {
+    color: #2c3e50; /* Updated hover color */
+}
+
+/* Footer */
+footer {
+    background: #1e2a38;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer li {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f39c12; /* Updated hover color */
+}

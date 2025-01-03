@@ -1,0 +1,90 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1fdc9; /* Soft light blue color for a modern look */
+}
+
+header {
+    background-color: #ffea00; /* Header color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #aa00ff; /* Same as header */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(211, 110, 255); /* Glow effect */
+}
+
+.nav-button:hover {
+    background-color: #ff3737; /* Slightly darker yellow */
+    box-shadow: 0 0 15px rgb(255, 102, 133); /* Enhanced glow effect on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+#dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-info {
+    background-color: #ffffff; /* White background for profile info */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    color: #004d00; /* Green color for headings */
+}
+
+.chart-container {
+    margin: 20px 0;
+    position: relative;
+    height: 400px;
+    background-color: #ffffff; /* White background for charts */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters, .comparison {
+    margin: 20px 0;
+}
+
+.filters input, .filters button {
+    margin: 5px;
+}
+
+button {
+    background-color: #4caf50; /* Green button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}

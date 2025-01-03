@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a7e9ff; /* Soft light blue color for a modern look */
+}
+
+header {
+    background-color: #00bfff; /* Yellow color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #000000; /* Darker yellow */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 174, 0.6); /* Glow effect */
+}
+
+.nav-button:hover {
+    background-color: #0022ff; /* Even lighter yellow */
+    box-shadow: 0 0 15px rgba(0, 106, 255, 0.8); /* Enhanced glow effect on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Dashboard Styles */
+#dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-info {
+    background-color: #ffffff; /* White background for profile info */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    color: #004d00; /* Dark green color for headings */
+}
+
+/* Forms Styles */
+#daily-progress-form, #activity-form {
+    background-color: #ffffff; /* White background for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#daily-progress-form h2, #activity-form h2 {
+    margin-top: 0;
+}
+
+#daily-progress-form form, #activity-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#daily-progress-form label, #activity-form label {
+    margin: 10px 0 5px;
+}
+
+#daily-progress-form input, #daily-progress-form select,
+#activity-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50; /* Green button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Filters and Comparison Styles */
+.filters, .comparison {
+    margin: 20px 0;
+}
+
+.filters input, .filters button {
+    margin: 5px;
+}
+
+/* Remove Footer */
+footer {
+    display: none;
+}

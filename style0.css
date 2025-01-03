@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 880px; 
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #ec3bb1;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px; 
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(236, 59, 177, 0.6); /* Glow effect */
+}
+
+.nav-button:hover {
+    background-color: #ff0059;
+    box-shadow: 0 0 15px rgba(236, 59, 177, 0.8); /* Enhanced glow effect on hover */
+}
+
+.welcome-section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 6px;
+    background: #000000;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(46, 139, 87, 0.8); /* Glow effect */
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.button-container {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Increased min-width */
+    gap: 0.5em;
+    position: relative;
+}
+
+.feature-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px; /* Increased height */
+    background-color: #fff;
+    color: #000; /* Text color changed to black */
+    text-align: center;
+    padding: 10px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, z-index 0.3s, opacity 0.3s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; /* Default z-index */
+    opacity: 0.7; /* Default opacity */
+}
+
+.feature-button:hover {
+    transform: scale(1.05);
+    z-index: 10; /* Higher z-index on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+.feature-button h2 {
+    font-size: 30px; /* Increased font size */
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    color: #ffffff; /* Text color changed to white */
+    text-shadow: 
+        0 0 2px #000, /* Black stroke */
+        0 0 4px #000, 
+        0 0 6px #000, 
+        0 0 8px #000, 
+        0 0 10px #000; /* Adjust size for desired stroke effect */
+    font-weight: 700; /* Make text bold */
+}
+
+.feature-button p {
+    display: none; /* Hide the paragraph text */
+}
+
+.feature-button:nth-child(1) {
+    background-image: url('imagescarbon-footprint.png');
+    box-shadow: 0 0 40px rgb(147, 53, 255);
+}
+
+.feature-button:nth-child(2) {
+    background-image: url('imagessustainability-tips.png');
+    box-shadow: 0 0 40px rgb(255, 68, 0);
+}
+
+.feature-button:nth-child(3) {
+    background-image: url('imagesprogress-visualization.png');
+    box-shadow: 0 0 40px rgb(255, 220, 22);
+}
+
+.feature-button:nth-child(4) {
+    background-image: url('imagescommunity-engagement.png');
+    box-shadow: 0 0 40px rgb(2, 226, 255);
+}
+
+.feature-button:nth-child(5) {
+    background-image: url('imagesimpact-tracker.png');
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+}
+
+.feature-button:nth-child(6) {
+    background-image: url('imagesenvironmental-websites.png'); /* Add an appropriate image URL */
+    box-shadow: 0 0 40px rgb(0, 8, 255); /* Same glow effect as others */
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+}

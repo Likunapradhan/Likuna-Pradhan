@@ -1,0 +1,100 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7ff; /* Soft blue background color */
+}
+
+header {
+    background-color: #007bb5; /* Header color */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #005f8d; /* Darker blue for nav button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.nav-button:hover {
+    background-color: #003f6c; /* Even darker blue on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+.community-summary {
+    margin-bottom: 2rem;
+}
+
+.discussion-forum, .events, .share-your-story {
+    margin-bottom: 2rem;
+}
+
+.forum-post ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.forum-post ul li {
+    background-color: #cce5ff; /* Light blue for discussion topics */
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.forum-post a {
+    text-decoration: none;
+    color: #005f8d; /* Dark blue for links */
+}
+
+.forum-post a:hover {
+    text-decoration: underline;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-item {
+    background-color: #cce5ff; /* Light blue for events */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: #007bb5; /* Blue for buttons */
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #005f8d; /* Darker blue on hover */
+}
